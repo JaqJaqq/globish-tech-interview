@@ -1,8 +1,11 @@
 @import "./font";
 
-body {
-  font-family: "IBM Plex Sans Thai", sans-serif;
-  background: #39b7e8;
+* {
   box-sizing: border-box;
   margin: 0;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+body {
+  background: #39b7e8;
 }
