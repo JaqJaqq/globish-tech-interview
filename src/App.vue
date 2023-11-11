@@ -38,4 +38,8 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
 }
+.btn-page {
+  width: 96px;
+  height: 40px;
+}
 </style>

@@ -11,6 +11,10 @@
         <button class="btn">เรียนรู้อะไรใหม่ ๆ</button>
       </div>
     </div>
+    <div class="btn-page">
+      <button class="back">กลับ</button>
+      <button class="next">ต่อไป</button>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
@@ -80,5 +84,39 @@ img {
 .btn:hover {
   background: #f57c4a;
   border: 1px solid #000;
+}
+.btn-page {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.back {
+  width: 30%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #fffaf5;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+.next {
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #f7c116;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
 }
 </style>
