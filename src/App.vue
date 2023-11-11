@@ -1,15 +1,24 @@
 <template>
-  <WelcomeBox msg="Welcome to Globish" />
+  <div class="container">
+    <QuizCard />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import WelcomeBox from "./components/WelcomeBox.vue";
+import QuizCard from "./components/QuizCard.vue";
 
 export default defineComponent({
   name: "App",
+  data() {
+    return {
+      firstName: "Anurat",
+      lastName: "Likitdachavong",
+      age: 21,
+    };
+  },
   components: {
-    WelcomeBox,
+    QuizCard,
   },
 });
 </script>
@@ -20,6 +29,13 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
