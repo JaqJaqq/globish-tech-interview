@@ -333,6 +333,10 @@ img {
   background: #f57c4a;
   border: 1px solid #000;
 }
+.btn:focus {
+  background: #f57c4a;
+  border: 1px solid #000;
+}
 .btn-page {
   width: 100%;
   height: 20%;
